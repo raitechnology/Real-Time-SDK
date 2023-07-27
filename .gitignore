@@ -116,3 +116,11 @@ CMakeCache.txt
 *rsslEtaJNIVersion.h
 *LinuxSoLink
 /.gradle/
+*jsonVersion.h
+
+# Build temporaries
+/RH*
+/FC*
+/UB*
+/DEB*
+/ROCKY*

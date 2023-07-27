@@ -53,7 +53,7 @@ RsslRet exampleEncodeElementList(RsslEncodeIterator *encIter)
 	/* FIRST Element Entry: encode entry from the RsslTime primitive type */
 	/* populate and encode element entry with name and dataType information for this element */
 	elemEntry.name.data = (char *)"Element - RsslTime";
-	elemEntry.name.length = 20; 
+	elemEntry.name.length = 18; 
 	elemEntry.dataType = RSSL_DT_TIME;
 	printf("\tEncoding Element Entry (name: %.*s) \n", elemEntry.name.length, elemEntry.name.data);
 	retVal = rsslEncodeElementEntry(encIter, &elemEntry, &rsslTime); 

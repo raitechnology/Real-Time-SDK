@@ -232,6 +232,13 @@ TestReactorEvent* TestReactor::pollEvent()
 	return pEvent;
 }
 	
+static list<TestReactorComponent *>::iterator
+find(list<TestReactorComponent *>::iterator b,  list<TestReactorComponent *>::iterator e,  TestReactorComponent* pComponent)
+{
+	for ( ; b != e; b++ ) if ( pComponent == *b ) return b;
+        return e;
+}
+
 void TestReactor::addComponent(TestReactorComponent* pComponent)
 {
 	bool found = (find(_componentList.begin(), _componentList.end(), pComponent) != _componentList.end());
